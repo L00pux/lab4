@@ -1,0 +1,303 @@
+body{
+    font-family: sans-serif;
+    background: #f4efe7;
+}
+
+/* verx */
+
+.verx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+/* logo */
+
+.logo{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.logo_LV{
+    width: 15%;
+    height: 15%;
+}
+
+/* menu */
+
+.menu{
+    display: flex;
+    gap: 30px;
+}
+
+.menuElement{
+    text-decoration: none;
+    color:black;
+}
+
+/* поисковик */
+
+.Search_PV{
+    display: flex;
+    border-radius: 20px;
+    border: none;
+}
+
+.poi{
+    width: 20px;
+    height: 20px;
+}
+
+.search_V{
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.kor{
+    width: 15px;
+    height: 15px;
+}
+
+/* --------------------- */
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background: #fcfcfb;
+    border-radius: 40px;
+    padding: 12px 20px;
+    width: 300px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Картинка поиска */
+.icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin-right: 12px;
+}
+
+/* input */
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.S_V{
+    font-size: 18px;
+}
+
+/* разделитель */
+.divider {
+    width: 1px;
+    height: 32px;
+    background: #d8d2c8;
+    margin:0 20px 0 0;
+}
+
+/* корзина */
+.cart {
+    position: relative;
+}
+
+.cart img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* бейдж */
+.badge {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    background: #ff3b3b;
+    color: white;
+    font-size: 11px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px rgb(239, 82, 82);
+}
+
+/* --------------------------------------- */
+
+/* слова и всё остальное */
+
+.slov{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    gap: 40px;
+}
+
+.slov_U{
+    max-width: 700px;
+}
+
+.slov_title{
+    display: flex;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+.slov_orang{
+    color: #ff7a00;
+    font-size: 150px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.r_t{
+    display: flex;
+    flex-direction: column;
+    font-size: 55px;
+    font-weight: bold;
+    color: #0a0a0a;
+}
+
+.slov_text{
+    margin: 20px 0;
+    color: rgb(125, 122, 122);
+    font-size: 30px;
+}
+
+.slov_rad{
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.rad_blac{
+    padding: 15px 32px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+
+.rad_video{
+    padding: 12px 20px 0 0;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    font-size: 25px;
+}
+
+.wit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    color: black;
+    font-size: 20px;
+}
+
+.slov_zv{
+    margin-top: 20px;
+}
+
+.zv_g{
+    color: #0a0a0a;
+    font-weight: bold;
+}
+
+.zv_s{
+    color: #727171;
+}
+
+.slov_im{
+    width: 550px;
+    height: 550px;
+}
+
+/* адаптив */
+
+@media (max-width: 1100px) {
+  .slov {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .slov_title {
+    font-size: 48px;
+  }
+}
+
+/* <= 600px */
+@media (max-width: 600px) {
+  .verx {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+  }
+
+  .slov_title{
+    justify-content: center;
+  }
+
+  .slov_orang{
+    font-size: 100px;
+  }
+
+  .r_t{
+    font-size: 40px;
+  }
+
+  .slov_text{
+    font-size: 20px;
+  }
+
+  .slov {
+    padding: 20px;
+  }
+
+  .slov_title {
+    font-size: 36px;
+  }
+
+  .slov_rad {
+    justify-content: center;
+  }
+
+  .slov_zv{
+    display: none;
+  }
+
+  .slov_im{
+    width: 300px;
+    height: 300px;
+  }
+}
